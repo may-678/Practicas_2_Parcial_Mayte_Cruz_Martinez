@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <title>Suma de dos numeros</title>
+</head>
+<body>
+     <h1>Suma de dos numeros</h1>
+
+    <form method="POST">
+        <table border="1">
+            <TR>
+                <TD><label for="numero1"> Primer numero: </label></TD>
+                <TD> <input type="number" name="numero1"> </TD>
+            </TR>
+            <TR>
+                 <TD><label for="numero2"> Segundo numero: </label></TD>
+                 <TD><input type="number" name="numero2"></TD></TD>
+            </TR>
+            <tr>
+                <td><button type="submit">SUMAR</button></td>
+            </tr>
+        </table>
+
+    </form>
+    {% if resultado is not none %}
+     <h2>resultado</h2>
+     <label> La suma es:{{resultado}}</label>
+    {% endif %}
+</body>
+</html>
